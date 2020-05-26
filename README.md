@@ -25,3 +25,9 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Henry's Notes
+To add a module to our angular app we must import the module in the file app.module.ts
+later on the attribute import (which is an array) inside that same file (app.module.ts) we add the imported module. (for an example check the module FormsModule)
+
+
