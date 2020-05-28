@@ -33,3 +33,10 @@ later on the attribute import (which is an array) inside that same file (app.mod
 
 @Input is the way Angular makes data flows from parents components to its children components.
 @Output is the way Angular makes data flows from children components to their parents. Also Output fires events from the childre components that can be handle by the parent
+
+COMPONENT Lifecycle
+constructor
+ngOnChange
+ngOnInit it is executed just once, when the component is rendered, here we can add rest api calls
+ngOnCheck
+ngOnDestroy, it cna be used to kill listeners
