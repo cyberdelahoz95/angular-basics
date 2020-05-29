@@ -36,7 +36,7 @@ export class ProductComponent implements OnChanges, OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
-    //ideal for cancelling listeners or unsuscribe
+    // ideal for cancelling listeners or unsuscribe
     console.log('destroy');
   }
 }

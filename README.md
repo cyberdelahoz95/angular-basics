@@ -28,6 +28,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Henry's Notes
 
+To create a component we must first create a folder with the name of the component. Then we create three files, one for template, one for styles and one for typescript. Finally we have to modify the file app.module.ts and import the component and add declarations attribute.
+
 To add a module to our angular app we must import the module in the file app.module.ts
 later on the attribute import (which is an array) inside that same file (app.module.ts) we add the imported module. (for an example check the module FormsModule)
 
@@ -40,3 +42,7 @@ ngOnChange
 ngOnInit it is executed just once, when the component is rendered, here we can add rest api calls
 ngOnCheck
 ngOnDestroy, it cna be used to kill listeners
+
+ng g c <component_name> Creates a new component
+
+ng lint 
