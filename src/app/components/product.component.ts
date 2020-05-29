@@ -20,6 +20,8 @@ export class ProductComponent implements OnChanges, OnInit, OnDestroy {
   @Input() product: Product;
   @Output() productClicked: EventEmitter<any> = new EventEmitter();
 
+  today: Date = new Date();
+
   addCart() {
     //
     this.productClicked.emit(this.product.id);
