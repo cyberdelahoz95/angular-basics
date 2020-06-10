@@ -48,3 +48,5 @@ ng g c <component_name> Creates a new component
 ng lint 
 
 custom pipes with ng g p <name>
+
+custom directive ng g d <name>, con una directiva manipulas como se comporta un elemento del dom. Permite modificar el comportamiento native de un elemento.
