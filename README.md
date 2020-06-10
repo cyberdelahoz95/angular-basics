@@ -46,3 +46,5 @@ ngOnDestroy, it cna be used to kill listeners
 ng g c <component_name> Creates a new component
 
 ng lint 
+
+custom pipes with ng g p <name>
