@@ -45,8 +45,13 @@ ngOnDestroy, it cna be used to kill listeners
 
 ng g c <component_name> Creates a new component
 
-ng lint 
+ng lint
 
 custom pipes with ng g p <name>
 
 custom directive ng g d <name>, con una directiva manipulas como se comporta un elemento del dom. Permite modificar el comportamiento native de un elemento.
+
+los servicios en angular estan pensados para proveer datos
+se crean utilizando el comando ng g s nombreDelServicio
+
+en Angular las inyecciones de dependencias se inyectan al componente pasandolas como parametro privado dentro del constructor del componente
