@@ -55,3 +55,12 @@ los servicios en angular estan pensados para proveer datos
 se crean utilizando el comando ng g s nombreDelServicio
 
 en Angular las inyecciones de dependencias se inyectan al componente pasandolas como parametro privado dentro del constructor del componente
+
+implementar lazy loading de componentes en angular, requiere que la aplicación se modularice ( nombreModulo.module.ts)
+un modulo de angular se encarga de encapsular todo lo necesario para el buen funcionamiento del módulo. Se encapsulan otros componentes, directivas, etc.
+Al modularizar un componente, cambiará la forma en la que definimos las rutas en el app-routing. Ahora se importará de la siguiente manera
+{
+path: 'home',
+loadChildren: () =>
+import('./home/home.module').then((m) => m.HomeModule),
+}
