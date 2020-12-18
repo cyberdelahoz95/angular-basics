@@ -64,3 +64,9 @@ path: 'home',
 loadChildren: () =>
 import('./home/home.module').then((m) => m.HomeModule),
 }
+
+los guards en angular, permiten ejecutar un middleware para, entre otras cosas, proteger ciertas rutas para que solo se puedan acceder al cumplirse ciertas condiciones
+para crear un guard ejecutamos el comando
+ng g g nombreDelGuard
+
+este proyecto se vale de angular material para llevar a cabo la parte de la ui ux. Como buena practica, se implementa un sharedmodule que permita compartir funcionalidades de angular material entre varios modulos de la solucion
