@@ -70,3 +70,7 @@ para crear un guard ejecutamos el comando
 ng g g nombreDelGuard
 
 este proyecto se vale de angular material para llevar a cabo la parte de la ui ux. Como buena practica, se implementa un sharedmodule que permita compartir funcionalidades de angular material entre varios modulos de la solucion
+
+si al comando ng g m nombreModulo le agrego al final la bandera --routing el CLI agregará a nuestro module el feature de rutas.
+
+los schematic son comandos disponibles en algunos modulos que permiten a partir de ellos generar código automáticamente y que cumpla con ciertas reglas, por ejemplo mediante un schematic del modulo angular material, se pueden generar formularios preconstruidos y que cumplen con las reglas de diseño de material design.
