@@ -74,3 +74,7 @@ este proyecto se vale de angular material para llevar a cabo la parte de la ui u
 si al comando ng g m nombreModulo le agrego al final la bandera --routing el CLI agregará a nuestro module el feature de rutas.
 
 los schematic son comandos disponibles en algunos modulos que permiten a partir de ellos generar código automáticamente y que cumpla con ciertas reglas, por ejemplo mediante un schematic del modulo angular material, se pueden generar formularios preconstruidos y que cumplen con las reglas de diseño de material design.
+
+Al utilizar http client module se debe tener presente que devuelve un observable, por lo tanto el resultado del request se debe procesar mediante el method subscribe
+
+mediante la instrucción return this.http.get<Product[]> le decimos a angular que el request de tipo get, debe ser mapeado a un array de Product, este mismo principio se puede aplicar para cualquier escenario
