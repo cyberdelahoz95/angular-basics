@@ -28,14 +28,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Henry's Notes
 
-los schematic son comandos disponibles en algunos modulos que permiten a partir de ellos generar código automáticamente y que cumpla con ciertas reglas, por ejemplo mediante un schematic del modulo angular material, se pueden generar formularios preconstruidos y que cumplen con las reglas de diseño de material design.
-
-Al utilizar http client module se debe tener presente que devuelve un observable, por lo tanto el resultado del request se debe procesar mediante el method subscribe
-
-mediante la instrucción return this.http.get<Product[]> le decimos a angular que el request de tipo get, debe ser mapeado a un array de Product, este mismo principio se puede aplicar para cualquier escenario
-
-el type Partial<T> permite hacer un wrapper para que todos los campos de T sean opcionales, es muy util al realizar request del tipo put o patch
-
 un FormModule es un modulo para generar formularios que pueden ser enlazados mediante una directiva ngModel
 por otro lado un ReactiveFormModule utiliza un objeto FormControl para poder suscribirnos a un evento de cambio de valor y de esa manera reaccionar antes cambios en el valor de un input,
 agrega funcionalidades adicionales tales como validaciones y observables para extender el comportamiento del flujo de datos desde la vista hacia el controlador.
