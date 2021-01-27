@@ -28,9 +28,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Henry's Notes
 
-un FormModule es un modulo para generar formularios que pueden ser enlazados mediante una directiva ngModel
-por otro lado un ReactiveFormModule utiliza un objeto FormControl para poder suscribirnos a un evento de cambio de valor y de esa manera reaccionar antes cambios en el valor de un input,
-agrega funcionalidades adicionales tales como validaciones y observables para extender el comportamiento del flujo de datos desde la vista hacia el controlador.
+
 
 new FormControl('valor inicial',[validaciones usando objeto Validators] );
 this.emailField.valueChanges.subscribe(); para escuchar cambios en el valor de un formControl
