@@ -27,11 +27,14 @@
             />
           </mat-form-field>
           <div *ngIf="priceField.errors && priceField.dirty">
+            <mat-error *ngIf="priceField.hasError('invalid_price')"
+              >el precio es invalido</mat-error
+            >
             <p *ngIf="priceField.hasError('invalid_price')">
               Valor de precio invalido
             </p>
             <p *ngIf="priceField.hasError('required')">
-              Valor de precio invalido
+              Valor de precio requerido
             </p>
           </div>
         </div>

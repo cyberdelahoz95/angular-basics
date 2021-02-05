@@ -9,7 +9,8 @@ import {
   SimpleChanges,
 } from '@angular/core';
 
-import { Product } from '../../../models/product.model';
+import { Product } from '../../../core/models/product.model';
+import { CartService } from '../../../core/services/cart.service';
 
 @Component({
   selector: 'app-product',
@@ -22,9 +23,11 @@ export class ProductComponent implements OnChanges, OnInit, OnDestroy {
 
   today: Date = new Date();
 
+  constructor(private cartService: CartService) {}
+
   addCart() {
-    //
-    this.productClicked.emit(this.product.id);
+    this.cartService.addToCart(this.product);
+    // this.productClicked.emit(this.product.id);
   }
 
   ngOnChanges(changes: SimpleChanges) {

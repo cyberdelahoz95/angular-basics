@@ -27,6 +27,11 @@ const routes: Routes = [
           import('./products/products.module').then((m) => m.ProductsModule),
       },
       {
+        path: 'order',
+        loadChildren: () =>
+          import('./order/order.module').then((m) => m.OrderModule),
+      },
+      {
         path: 'contact',
         canActivate: [AdminGuard],
         loadChildren: () =>
@@ -39,7 +44,7 @@ const routes: Routes = [
     loadChildren: () =>
       import('./admin/admin.module').then((m) => m.AdminModule),
   },
-  //not found siempre al final
+  // not found siempre al final
   {
     path: '**',
     component: NotFoundComponent,
