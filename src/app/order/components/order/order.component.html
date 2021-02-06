@@ -4,8 +4,8 @@
     <div *ngIf="products$ | async as products">
       <p *ngIf="products.length === 0">No hay productos seleccionados</p>
       <ul>
-        <li *ngFor="let product of products">
-          {{ product.title }}
+        <li *ngFor="let order of products | groupOrder: 'id'">
+          {{ order.title }} ({{ order.quantity }})
         </li>
       </ul>
     </div>

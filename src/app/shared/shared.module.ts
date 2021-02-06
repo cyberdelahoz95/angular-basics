@@ -9,6 +9,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 
 import { MaterialModule } from './../material/material.module';
+import { GroupOrderPipe } from './pipes/group-order/group-order.pipe';
 
 @NgModule({
   declarations: [
@@ -16,12 +17,14 @@ import { MaterialModule } from './../material/material.module';
     FooterComponent,
     ExponentialPipe,
     HighlightDirective,
+    GroupOrderPipe,
   ],
   exports: [
     HeaderComponent,
     FooterComponent,
     ExponentialPipe,
     HighlightDirective,
+    GroupOrderPipe,
   ],
   imports: [CommonModule, RouterModule, MaterialModule, ReactiveFormsModule],
 })
