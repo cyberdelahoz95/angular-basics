@@ -19,3 +19,16 @@ paso 4 ng serve -c=nuevoAmbiente y ng build -c=nuevoAmbiente
 
 crear autenticacion de angular con firebase para
 crear servicio ng g s core/services/auth
+
+deploy in firebase
+firebase init and choose type of project
+choose dist folder
+ng build --prod
+firebase deploy
+
+firebase.json
+
+hosting.rewrites: {
+source:'asterisco asteriscto',
+destination:"index.html"
+}
