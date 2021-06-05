@@ -5,7 +5,13 @@
     "types": [
       "jasmine",
       "node"
-    ]
+    ],
+    "paths":{
+      "@core/*":["src/app/core/*"],
+      "@utils/*":["src/app/utils/*"],
+      "@shared/*":["src/app/shared/*"],
+      "@material/*":["src/app/material/*"],
+    }
   },
   "files": [
     "src/test.ts",
